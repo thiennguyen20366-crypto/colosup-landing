@@ -168,11 +168,51 @@
   .total-box .t{font-size:1.5rem;color:var(--deep)}
   .ok-msg{display:none;text-align:center;padding:20px;background:#e9faf1;border:1px solid var(--mint);border-radius:14px;color:#127a4c;font-weight:700;margin-top:18px}
 
-  /* Footer */
-  footer{background:var(--ink);color:#7a9ac8;padding:50px 0 30px;text-align:center}
-  footer .logo{justify-content:center;color:#fff;margin-bottom:14px}
-  footer p{font-size:.9rem;max-width:560px;margin:0 auto 8px}
-  footer .small{font-size:.78rem;color:#4a6a98;margin-top:18px}
+  /* Footer redesign */
+  footer{padding:0}
+  .ft-top{background:#fff;padding:40px 0;border-top:3px solid var(--blue)}
+  .ft-top-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1.2fr;gap:32px;align-items:start}
+  .ft-tagline{font-weight:800;font-size:1rem;color:var(--deep);margin:8px 0;line-height:1.4}
+  .ft-desc{font-size:.87rem;color:#3a5888;line-height:1.6}
+  .ft-contact-row{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:.9rem}
+  .ft-ci{font-size:1.1rem;flex-shrink:0;margin-top:1px}
+  .ft-contact-row strong{display:block;color:var(--deep);font-size:.8rem;margin-bottom:2px;text-transform:uppercase;letter-spacing:.3px}
+  .ft-hl{color:var(--blue);font-size:1.05rem;font-weight:900}
+  .ft-office-head{font-weight:800;color:var(--deep);font-size:.8rem;letter-spacing:.5px;margin-bottom:10px;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+  .ft-office p{font-size:.84rem;color:#3a5888;line-height:1.6;margin-bottom:4px}
+
+  .ft-mid{background:var(--cream);padding:32px 0;border-top:1px solid #c8d8f4;border-bottom:1px solid #c8d8f4}
+  .ft-mid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .ft-sec-t{font-weight:800;font-size:.75rem;letter-spacing:1px;color:var(--deep);margin-bottom:14px;text-transform:uppercase}
+  .ft-socials{display:flex;gap:8px;margin-bottom:14px}
+  .ft-soc{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:.95rem;text-decoration:none;flex-shrink:0}
+  .ft-soc.fb{background:#1877F2}.ft-soc.tt{background:#000}.ft-soc.yt{background:#FF0000}.ft-soc.zl{background:#0068FF}
+  .ft-igg{background:linear-gradient(135deg,var(--gold),#9a7010);color:#fff;display:inline-block;border-radius:10px;padding:8px 14px;font-weight:800;font-size:.8rem;line-height:1.4;text-align:center}
+  .ft-svc-ico{font-size:2rem;margin-bottom:8px}
+  .ft-service p{font-size:.86rem;color:#3a5888;margin-bottom:14px;line-height:1.6}
+  .ft-hbtn{display:block;background:var(--blue);color:#fff;font-weight:700;font-size:.8rem;padding:10px 14px;border-radius:50px;text-align:center;text-decoration:none}
+  .ft-store{display:block;background:var(--ink);color:#fff;font-weight:700;font-size:.84rem;padding:11px 16px;border-radius:10px;text-align:center;text-decoration:none;margin-bottom:8px}
+  .ft-store span{font-size:1rem;margin-right:6px}
+
+  .ft-trust{background:#fff;padding:24px 0;border-top:1px solid #c8d8f4}
+  .ft-trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .ft-ti{display:flex;align-items:flex-start;gap:12px}
+  .ft-ti-ico{font-size:1.6rem;flex-shrink:0}
+  .ft-ti strong{display:block;font-size:.75rem;color:var(--deep);letter-spacing:.3px;margin-bottom:4px;text-transform:uppercase}
+  .ft-ti p{font-size:.8rem;color:#3a5888;line-height:1.5;margin:0}
+
+  .ft-bottom{background:var(--ink);padding:16px 0}
+  .ft-bottom-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .ft-copy{color:#7a9ac8;font-size:.8rem}
+  .ft-reg{background:var(--gold);color:var(--ink);font-weight:800;font-size:.75rem;padding:6px 14px;border-radius:50px;white-space:nowrap}
+
+  @media(max-width:880px){
+    .ft-top-grid,.ft-mid-grid,.ft-trust-grid{grid-template-columns:1fr 1fr}
+    .ft-bottom-in{flex-direction:column;text-align:center}
+  }
+  @media(max-width:480px){
+    .ft-top-grid,.ft-mid-grid,.ft-trust-grid{grid-template-columns:1fr}
+  }
 
   /* Sticky mobile CTA */
   .sticky-cta{display:none}
@@ -459,11 +499,99 @@
 </section>
 
 <footer>
-  <div class="wrap">
-    <div class="logo"><img src="Image/bottle-front.png" alt="ColosUp" class="logo-img"> Colos<span style="color:var(--gold)">Up</span></div>
-    <p>Sữa non miễn dịch uống liền cho người trẻ bận rộn. Sản phẩm hậu thuẫn bởi VitaDairy – Top 3 sữa bột Việt Nam.</p>
-    <p>Hotline: 1900 xxxx · Email: hello@colosup.vn</p>
-    <p class="small">© 2026 ColosUp. Đây là trang landing page demo. Thực phẩm bổ sung không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.</p>
+  <!-- Top: Brand + Contact + Offices -->
+  <div class="ft-top">
+    <div class="wrap">
+      <div class="ft-top-grid">
+        <div>
+          <div class="logo" style="justify-content:flex-start;margin-bottom:8px">
+            <img src="Image/bottle-front.png" alt="ColosUp" class="logo-img">
+            Colos<span style="color:var(--gold)">Up</span>
+          </div>
+          <p class="ft-tagline">Giải Cứu Deadline<br>Sữa Non Uống Liền Cho Gen Z</p>
+          <p class="ft-desc">ColosUp cam kết mang đến nguồn sữa non chất lượng, giúp tăng cường miễn dịch, hỗ trợ tiêu hóa và đồng hành cùng sự phát triển toàn diện.</p>
+        </div>
+        <div>
+          <div class="ft-contact-row"><span class="ft-ci">🌐</span><div><strong>Website</strong>www.colosup.vn</div></div>
+          <div class="ft-contact-row"><span class="ft-ci">✉️</span><div><strong>Email</strong>cskk@colosup.vn</div></div>
+          <div class="ft-contact-row"><span class="ft-ci">📞</span><div><strong>Hotline</strong><span class="ft-hl">1900 633 559</span></div></div>
+        </div>
+        <div>
+          <p class="ft-office-head">📍 VĂN PHÒNG HÀ NỘI</p>
+          <p>Tầng 10, Tòa nhà Charmvit Tower, 117 Trần Duy Hưng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
+          <p>Tel/Fax: (024) 3555 8686</p>
+        </div>
+        <div>
+          <p class="ft-office-head">📍 TRỤ SỞ TP. HỒ CHÍ MINH</p>
+          <p>Tầng 7, Tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, Tp. Hồ Chí Minh</p>
+          <p>Tel/Fax: (028) 7300 6789</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mid: Social + Services + App -->
+  <div class="ft-mid">
+    <div class="wrap">
+      <div class="ft-mid-grid">
+        <div>
+          <p class="ft-sec-t">Kết nối với ColosUp</p>
+          <div class="ft-socials">
+            <a href="#" class="ft-soc fb">f</a>
+            <a href="#" class="ft-soc tt">♪</a>
+            <a href="#" class="ft-soc yt">▶</a>
+            <a href="#" class="ft-soc zl">Z</a>
+          </div>
+          <div class="ft-igg">Sữa Non<br>IgG</div>
+          <p style="font-size:.8rem;color:#3a5888;margin-top:10px">Bổ sung kháng thể IgG tự nhiên<br>Tăng cường miễn dịch vượt trội</p>
+        </div>
+        <div>
+          <p class="ft-sec-t">Tư vấn dinh dưỡng</p>
+          <div class="ft-svc-ico">🎧</div>
+          <p class="ft-service p">Đội ngũ chuyên gia dinh dưỡng sẵn sàng hỗ trợ 24/7</p>
+          <a href="tel:1900633559" class="ft-hbtn">📞 Hotline tư vấn: 1900 633 559</a>
+        </div>
+        <div>
+          <p class="ft-sec-t">Mua hàng chính hãng</p>
+          <div class="ft-svc-ico">🛒</div>
+          <p class="ft-service p">Đặt hàng nhanh chóng qua website hoặc tổng đài</p>
+          <a href="tel:1900633559" class="ft-hbtn">📞 Hotline mua hàng: 1900 633 559</a>
+        </div>
+        <div>
+          <p class="ft-sec-t">Tải ứng dụng ColosUp</p>
+          <a href="#" class="ft-store"><span>🍎</span> App Store</a>
+          <a href="#" class="ft-store"><span>▶</span> Google Play</a>
+          <p style="font-size:.78rem;color:#3a5888;text-align:center">Quét mã để tải ứng dụng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust badges -->
+  <div class="ft-trust">
+    <div class="wrap">
+      <div class="ft-trust-grid">
+        <div class="ft-ti"><span class="ft-ti-ico">🛡️</span><div><strong>Sản phẩm chính hãng</strong><p>Cam kết 100% chính hãng, nguồn gốc rõ ràng</p></div></div>
+        <div class="ft-ti"><span class="ft-ti-ico">💧</span><div><strong>Chất lượng quốc tế</strong><p>Sản xuất theo tiêu chuẩn ISO 22000:2018</p></div></div>
+        <div class="ft-ti"><span class="ft-ti-ico">✚</span><div><strong>An toàn tuyệt đối</strong><p>Kiểm định nghiêm ngặt, an tâm sử dụng</p></div></div>
+        <div class="ft-ti"><span class="ft-ti-ico">⭐</span><div><strong>Được chuyên gia tin dùng</strong><p>Hàng mẹ yêu Việt đã lựa chọn</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <div class="wrap ft-bottom-in">
+      <div class="logo" style="justify-content:flex-start">
+        <img src="Image/bottle-front.png" alt="ColosUp" class="logo-img" style="filter:brightness(0) invert(1)">
+        <span style="color:#fff">Colos<span style="color:var(--gold)">Up</span></span>
+      </div>
+      <span style="color:#c8daf0;font-size:.85rem">Giải Cứu Deadline Sữa Non Uống Liền Cho Gen Z Bận Rộn</span>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <span class="ft-reg">✓ Đã Đăng Ký</span>
+        <span class="ft-copy">© 2024 ColosUp. Tất cả các quyền được bảo lưu.</span>
+      </div>
+    </div>
   </div>
 </footer>
 
