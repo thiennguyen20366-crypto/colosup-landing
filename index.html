@@ -41,7 +41,7 @@
   nav{position:sticky;top:0;z-index:50;background:rgba(238,244,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid #c8d8f4}
   .nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1120px;margin:0 auto}
   .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.4rem;color:var(--deep)}
-  .logo .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--blue));display:grid;place-items:center;color:#fff;font-size:1.2rem;box-shadow:var(--shadow)}
+  .logo-img{width:36px;height:46px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(13,40,112,.2))}
   nav .btn{padding:11px 24px;font-size:.95rem}
 
   /* Hero */
@@ -90,7 +90,8 @@
   .usp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
   .usp-card{background:#fff;border-radius:var(--radius);padding:28px 22px;text-align:center;box-shadow:0 8px 22px rgba(7,18,52,.06);border:1px solid #d4e2f8;transition:transform .15s}
   .usp-card:hover{transform:translateY(-6px)}
-  .usp-card .ico{width:58px;height:58px;margin:0 auto 14px;border-radius:16px;background:linear-gradient(135deg,var(--gold),var(--blue));display:grid;place-items:center;font-size:1.6rem;color:#fff}
+  .usp-card .ico{height:110px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}
+  .usp-card .ico img{max-height:110px;max-width:100%;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(13,40,112,.2))}
   .usp-card h3{font-size:1.08rem;margin-bottom:6px}
   .usp-card p{font-size:.9rem;color:#3a5888}
 
@@ -198,7 +199,7 @@
 
 <nav>
   <div class="nav-in">
-    <div class="logo"><span class="mark">C</span> ColosUp</div>
+    <div class="logo"><img src="Image/bottle-front.png" alt="ColosUp" class="logo-img"> Colos<span style="color:var(--gold)">Up</span></div>
     <a href="#order" class="btn">Đặt ngay</a>
   </div>
 </nav>
@@ -263,22 +264,22 @@
     <p class="sec-sub">VitaDairy mạnh về sữa non (ColosBaby) nhưng chỉ ở dạng bột cho mẹ – bé – người già. ColosUp là dòng sữa non <b>uống liền (RTD) đầu tiên</b> dành cho người trẻ khỏe mạnh.</p>
     <div class="usp-grid">
       <div class="usp-card">
-        <div class="ico">🛡️</div>
+        <div class="ico"><img src="Image/marketing.jpg" alt="Sữa non IgG"></div>
         <h3>Sữa non IgG</h3>
         <p>Đề kháng chuẩn khoa học từ kháng thể sữa non tự nhiên.</p>
       </div>
       <div class="usp-card">
-        <div class="ico">🥤</div>
+        <div class="ico"><img src="Image/bottle-front.png" alt="Uống liền 100ml"></div>
         <h3>Uống liền 100ml</h3>
         <p>Tiện lợi, mang đi cả ngày — không cần pha, không lích kích.</p>
       </div>
       <div class="usp-card">
-        <div class="ico">🌿</div>
+        <div class="ico"><img src="Image/bottle-back.png" alt="Ít đường"></div>
         <h3>Ít đường</h3>
         <p>Hợp lối sống healthy, không lo nạp thêm đường vô bổ.</p>
       </div>
       <div class="usp-card">
-        <div class="ico">🏆</div>
+        <div class="ico"><img src="Image/combo.png" alt="VitaDairy"></div>
         <h3>Hậu thuẫn VitaDairy</h3>
         <p>Thương hiệu Top 3 sữa bột Việt Nam — yên tâm về chất lượng.</p>
       </div>
@@ -465,7 +466,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="logo"><span class="mark">C</span> ColosUp</div>
+    <div class="logo"><img src="Image/bottle-front.png" alt="ColosUp" class="logo-img"> Colos<span style="color:var(--gold)">Up</span></div>
     <p>Sữa non miễn dịch uống liền cho người trẻ bận rộn. Sản phẩm hậu thuẫn bởi VitaDairy – Top 3 sữa bột Việt Nam.</p>
     <p>Hotline: 1900 xxxx · Email: hello@colosup.vn</p>
     <p class="small">© 2026 ColosUp. Đây là trang landing page demo. Thực phẩm bổ sung không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.</p>
