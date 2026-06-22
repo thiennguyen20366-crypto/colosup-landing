@@ -46,9 +46,8 @@
 
   /* Hero */
   .hero{position:relative;padding:60px 0 70px;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;max-width:720px;margin:0 auto;text-align:center}
-  .hero-cta{justify-content:center}
-  .trust{justify-content:center}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .hero-art{position:relative;display:grid;place-items:center}
   .pill{display:inline-block;background:#fff;border:1px solid #b8cef4;color:var(--deep);font-weight:700;font-size:.85rem;padding:7px 16px;border-radius:50px;margin-bottom:18px}
   .hero h1{font-size:3rem;line-height:1.12;font-weight:900;letter-spacing:-.5px}
   .hero h1 .hl{background:linear-gradient(120deg,var(--blue),var(--deep));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -219,6 +218,7 @@
 
   @media(max-width:880px){
     .hero-grid,.prod-grid,.pers-grid{grid-template-columns:1fr}
+    .hero-art{order:-1}
     .hero h1{font-size:2.2rem}
     .hero-art{order:-1}
     .prob-grid,.usp-grid,.steps-grid,.rev-grid,.pers-detail{grid-template-columns:1fr}
@@ -262,6 +262,12 @@
         <div><b>IgG</b> kháng thể sữa non</div>
         <div><b>Top 3</b> hậu thuẫn VitaDairy</div>
       </div>
+    </div>
+    <div class="hero-art">
+      <div class="blob"></div>
+      <img src="Image/bottle-front.png" alt="ColosUp Sữa Non Miễn Dịch 100ml" style="width:300px;max-width:100%;filter:drop-shadow(0 24px 40px rgba(13,40,112,.28));position:relative;z-index:1">
+      <div class="float-tag ft1"><span class="e">🛡️</span> Tăng đề kháng</div>
+      <div class="float-tag ft2"><span class="e">🌿</span> Ít đường</div>
     </div>
   </div>
 </header>
